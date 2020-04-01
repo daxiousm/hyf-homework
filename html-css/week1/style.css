@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: blanchedalmond;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 63%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+ul {
+  list-style: none;
+  font-style: italic;
+}
+.contacts .address {
+  margin-top: 30px;
+}
+h2 {
+  margin-left: 5%;
+  margin-right: 35%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.summary {
+  /* display: flex;
+  justify-content: space-between; */
+  margin-left: 10%;
+  margin-right: 15%;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+.technical-description {
+  margin-left: 10%;
+  margin-right: 15%;
+}
+.education {
+  /*display: flex;
+  justify-content: space-between;*/
+  margin-left: 10%;
+  margin-right: 50%;
+}
+.education .certification {
+  list-style: square;
+  margin-left: 7%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.education-2 h3 {
+  margin-left: 7%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.experience {
+  margin-left: 10%;
+  margin-right: 50%;
+}
+.experience .exper1 {
+  list-style: square;
+  margin-left: 7%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+div h3 {
+  margin-left: 7%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+div .tele {
+  list-style: square;
+  margin-left: 7%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
