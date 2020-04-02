@@ -28,6 +28,11 @@ h2 {
   margin-top: 50px;
   margin-bottom: 25px;
 }
+h4 {
+  font-style: normal;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
 .summary {
   /* display: flex;
   justify-content: space-between; */
@@ -46,7 +51,12 @@ h2 {
   margin-left: 10%;
   margin-right: 50%;
 }
-.education .certification {
+.education p,
+.education-2 p {
+  font-weight: bold;
+}
+.education .certification,
+.education .HYF {
   list-style: square;
   margin-left: 7%;
   margin-top: 15px;
@@ -67,6 +77,10 @@ h2 {
   margin-left: 7%;
   margin-top: 15px;
   margin-bottom: 15px;
+  font-style: initial;
+}
+.experience p {
+  font-weight: bold;
 }
 div h3 {
   margin-left: 7%;
@@ -78,4 +92,12 @@ div .tele {
   margin-left: 7%;
   margin-top: 15px;
   margin-bottom: 15px;
+  font-style: initial;
+}
+.resource .reference {
+  list-style: square;
+  margin-left: 13%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-style: initial;
 }
