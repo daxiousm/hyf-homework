@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+.top-page {
+  padding-top: 32px;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 50px;
+}
+.nav-list li {
+  display: inline;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: 7%;
+  margin-bottom: 20px;
+}
+
+.office {
+  display: block;
+  width: 100%;
+  height: 50vh;
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+.container {
+  margin: 24px 7% 32px 7%;
+  display: flex;
+}
+.practical {
+  margin-left: 5%;
+}
+.gallery-logos {
+  margin: 75px 7% 50px 7%;
+  display: flex;
+}
+.logotypes {
+  margin-left: 24%;
+}
+.logotypes img {
+  display: block;
+  margin: 1.5em;
+  width: 110px;
+}
+.logotypes .web-logotypes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+footer {
+  background-color: blueviolet;
+  color: white;
+  padding-top: 2em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.position {
+  margin-left: 5%;
+}
+.position h3 {
+  margin-bottom: 12px;
+  padding-top: 32px;
+}
+.position p {
+  line-height: 2em;
+}
+.about {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  line-height: 2em;
+}
+.about h3 {
+  margin-bottom: 8px;
+}
+.archives {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  line-height: 2em;
+}
+.archives h3 {
+  margin-bottom: 8px;
+}
+.archives a {
+  display: block;
+  color: white;
+}
+.nav-footer {
+  margin-top: 24px;
+  margin-bottom: 1.5em;
+  line-height: 2em;
+}
+.nav-footer h3 {
+  margin-bottom: 8px;
+}
+.nav-footer a {
+  display: block;
+  color: white;
+}
