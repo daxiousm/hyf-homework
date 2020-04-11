@@ -15,6 +15,126 @@ li {
   margin-left: 7%;
   margin-right: 7%;
   margin-bottom: 50px;
+ }
+.nav-list li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /*margin-left: 7%;*/
+  margin-bottom: 20px;
+  text-align: center;
+}
+.office {
+  width: 100%;
+  height: 50vh;
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+.container {
+  margin: 24px 7% 32px 7%;
+}
+.web-development{
+	margin-bottom: 12px;
+}
+.practical .web-development{
+  margin-left: 5%;
+
+}
+.gallery{
+	margin-top: 32px;
+	margin-left: 7%;
+}
+.gallery h3{
+	margin-bottom: 12px;
+	
+}
+
+.logotypes h2{
+	margin-top: 1.5em;
+    margin-bottom: 2em;
+    margin-left: 7%;
+}
+
+.logotypes img {
+  display:block;
+  margin: 1em;
+  width: 110px;
+}
+.logotypes .web-logotypes{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+footer {
+  background-color: blueviolet;
+  color: white;
+  padding-top: 2em;
+  
+}
+.position {
+  margin-left: 5%;
+}
+.position h3 {
+  margin-bottom: 12px;
+  padding-top: 32px;
+}
+.position p {
+  line-height: 2em;
+}
+.about {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  line-height: 2em;
+  margin-left: 7%;
+}
+.about h3 {
+  margin-bottom: 8px;
+}
+.archives {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  line-height: 2em;
+  margin-left: 7%;
+}
+.archives h3 {
+  margin-bottom: 8px;
+}
+.archives a {
+  display: block;
+  color: white;
+}
+.nav-footer {
+  margin-top: 24px;
+  margin-bottom: 1.5em;
+  line-height: 2em;
+  margin-left: 7%;
+}
+.nav-footer h3 {
+  margin-bottom: 8px;
+}
+.nav-footer a {
+  display: block;
+  color: white;
+}
+/* styling or desketop layout*/
+@media only screen and (min-width:961px){
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+.top-page {
+  padding-top: 32px;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 50px;
 }
 .nav-list li {
   display: inline;
@@ -39,15 +159,17 @@ li {
   margin-left: 5%;
 }
 .gallery-logos {
-  margin: 75px 7% 50px 7%;
   display: flex;
 }
+.gallery{
+	margin-left: 7%;
+}
 .logotypes {
-  margin-left: 24%;
+  margin-left:15%;
 }
 .logotypes img {
   display: block;
-  margin: 1.5em;
+  margin: 2em;
   width: 110px;
 }
 .logotypes .web-logotypes {
@@ -104,4 +226,5 @@ footer {
 .nav-footer a {
   display: block;
   color: white;
+}
 }
