@@ -1,0 +1,422 @@
+/* style part for the first form and common parts for all the pages */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-left: 5%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+/* logo image for all pages */
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+/* Header for all pages */
+.nav-header {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  padding-top: 25px;
+}
+.link-a,
+.link-b,
+.link-c {
+  margin-left: 20px;
+}
+
+.progressbar {
+  width: 100%;
+  height: 30px;
+}
+p {
+  font-size: 16px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.7;
+}
+h1,
+h4,
+h2,
+p,
+progress {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  width: 95%;
+}
+.form-box {
+  margin-bottom: 40px;
+  border-radius: 3px;
+  width: 90%;
+  padding: 8px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.countryname .form-box {
+  margin-bottom: 40px;
+  border-radius: 3px;
+  margin-left: 8px;
+  padding: 8px;
+  font-size: 12px;
+  height: 40px;
+}
+.buyer-form .contact-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.buyer-form .address {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.buyer-form .countryname {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.address-change .shipping-contact-details {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* styling the profile description and text area  */
+
+.profile-description {
+  margin-top: 20px;
+}
+.profile-description textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  width: 200px;
+  height: 100px;
+  border: 1px solid;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+}
+.profile-description p {
+  font-style: italic;
+}
+#toggle:checked ~ .shipping-contact-details {
+  display: none;
+}
+
+/* styling the button */
+
+button {
+  width: 150px;
+  height: 75px;
+  border-radius: 20px;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.push-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+/* mobile style for the second form  */
+.buyer-form .email-phone {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+/* mobile style for the third form  */
+.pass,
+.re-pass {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.newsletter {
+  border: none;
+  margin-bottom: 40px;
+  margin-left: 50px;
+}
+.newsletter .radio-label2,
+.radio-label3 {
+  margin-left: 40px;
+}
+/* mobile style for the fourth form  */
+.buyer-form .user-name,
+.card-type,
+.card-number {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.buyer-form .expiry {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+.buyer-form .ccv {
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+.card-type .form-box {
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 12px;
+  height: 40px;
+}
+
+.expiry .expiry-year {
+  margin-left: 30px;
+}
+
+.mini-box {
+  width: 50px;
+  height: 40px;
+  border-radius: 3px;
+  padding: 4px;
+}
+/* style part for the first form and common parts for all the pages */
+@media only screen and (min-width: 961px) {
+  body {
+    margin-left: 150px;
+    width: 80%;
+    justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  li {
+    list-style: none;
+  }
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .nav-header {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding-top: 25px;
+  }
+  .link-a,
+  .link-b,
+  .link-c {
+    margin-left: 20px;
+  }
+  .progressbar {
+    width: 100%;
+    height: 30px;
+  }
+  p {
+    font-size: 16px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.7;
+  }
+  h1,
+  h4,
+  h2,
+  p,
+  progress {
+    margin-bottom: 12px;
+    margin-top: 12px;
+    width: 75%;
+  }
+
+  form {
+    width: 100%;
+  }
+  .buyer-form .contact-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 50px;
+  }
+  .buyer-form .address {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 50px;
+  }
+
+  .address-change {
+    margin-left: 20px;
+  }
+  .form-box {
+    margin-bottom: 40px;
+    border-radius: 3px;
+    width: 30%;
+    padding: 8px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  .countryname .form-box {
+    border-radius: 3px;
+    margin-left: 8px;
+    padding: 8px;
+    font-size: 12px;
+    height: 40px;
+  }
+
+  .address-change .shipping-contact-details {
+    margin-top: 30px;
+  }
+  .buyer-form .countryname {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .contact-details .last-name {
+    margin-left: 60px;
+  }
+  .countryname .country-name {
+    margin-left: 40px;
+  }
+  .address .street-address {
+    margin-left: -20px;
+  }
+
+  .address .post-code {
+    margin-left: 70px;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  label strong {
+    font-size: 20px;
+  }
+  label .checkbox-label {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+  }
+
+  .profile-description {
+    margin-top: 20px;
+  }
+  .profile-description textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    width: 600px;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-right: 65px;
+    padding: 7px;
+    resize: none;
+  }
+  .profile-description p {
+    font-style: italic;
+  }
+
+  #toggle:checked ~ .shipping-contact-details {
+    display: none;
+  }
+  button {
+    width: 150px;
+    height: 75px;
+    border-radius: 20px;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .push-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  /*styling the contact(2nd form) and preference(3rd form) section*/
+  .buyer-form .email-phone {
+    display: flex;
+    flex-direction: row;
+    margin-left: 95px;
+  }
+  .email-phone .phone-number {
+    margin-left: 60px;
+  }
+  .buyer-form .pass {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+  }
+  .pass,
+  .re-pass {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+  }
+  .buyer-form .password {
+    margin-left: 70px;
+  }
+
+  .re-pass .password {
+    margin-left: 0px;
+  }
+  .newsletter {
+    border: none;
+    margin-bottom: 40px;
+    margin-left: 50px;
+  }
+  .newsletter .radio-label2,
+  .radio-label3 {
+    margin-left: 40px;
+  }
+
+  .buyer-form .countryname {
+    margin-left: 30px;
+  }
+
+  /* styling the payment(fourth form) form */
+  .buyer-form .user-name,
+  .card-type,
+  .card-number {
+    display: flex;
+    flex-direction: row;
+  }
+  .buyer-form .user-name {
+    margin-left: 60px;
+  }
+  .buyer-form .card-type {
+    margin-left: 100px;
+  }
+  .buyer-form .expiry {
+    margin-left: 80px;
+  }
+  .buyer-form .ccv {
+    margin-top: 30px;
+    margin-left: 140px;
+  }
+  .card-number .first-name {
+    margin-left: 50px;
+  }
+  .expiry .expiry-year {
+    margin-left: 90px;
+  }
+}

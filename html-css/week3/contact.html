@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charse="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, intial-scale=1.0, maximum-scale=1.0 /"
+    />
+    <meta name="description" content="hack YourFuture week 3 assignment" />
+    <meta name="keywords" content="web design" />
+    <meta name="author" content="Daxious Wendemu" />
+    <title>Form Design| Welcome</title>
+    <link rel="stylesheet" href="form-style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+        <div class="nav-header">
+          <div class="logo">
+            <img src="./images/browser.png" />
+          </div>
+
+          <ul class="nav-menu">
+            <li><a href="forms.html">About</a></li>
+            <li class="link-a"><a href="#">Contact</a></li>
+            <li class="link-b"><a href="preference.html">Preference</a></li>
+            <li class="link-c"><a href="payment.html">Payment</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="steps-to-follow">
+      <h1>Sign Up to yourcustomtailor.com</h1>
+      <h2>Step 2/4 How can we reach you?</h2>
+      <h4>Progress</h4>
+      <progress value="50" max="100" class="progressbar">50%</progress>
+      <p>
+        We will probably need to stay in touch somehow. Let us know how we can
+        reach you.
+      </p>
+    </div>
+    <form action="preference.html" method="get" class="buyer-form">
+      <div class="email-phone">
+        <label for="email-ad">Email*</label>
+        <input
+          type="email"
+          name="email-ad"
+          id="email-ad"
+          required
+          class="form-box"
+        />
+
+        <label class="phone-number" for="phone">Phone</label>
+        <input
+          type="number"
+          min="8"
+          max="8"
+          pattern="[-+]?[0-9]"
+          name="phone"
+          id="phone"
+          class="form-box"
+        />
+      </div>
+      <div class="pass">
+        <label for="pwd">Password*</label>
+        <input
+          type="password"
+          minlength="10"
+          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+          name="pwd"
+          id="first-name"
+          required
+          class="form-box"
+        />
+      </div>
+      <div class="re-pass">
+        <label class="password" for="pwd">Re-enter Password*</label>
+        <input
+          type="password"
+          minlength="10"
+          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+          name="pwd"
+          id="first-name"
+          required
+          class="form-box"
+        />
+      </div>
+      <p>I want to sign up for the newsletter</p>
+      <fieldset class="newsletter">
+        <label for="news-type-1" class="radio-label">Weekly News</label>
+        <input
+          id="news-type-1"
+          name="news-type"
+          type="radio"
+          value="Weekly News"
+          checked
+        />
+        <label for="news-type-2" class="radio-label2">Monthly News</label>
+        <input
+          id="news-type-2"
+          name="news-type"
+          type="radio"
+          value="Monthly News"
+        />
+        <label for="news-type-3" class="radio-label3">Don't send me News</label>
+        <input
+          id="news-type-3"
+          name="news-type"
+          type="radio"
+          value="Don't send me News"
+        />
+      </fieldset>
+      <div class="push-button">
+        <button class="next-step">
+          <a class="next-step" href="preference.html">Next Step</a>
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
