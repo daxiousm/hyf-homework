@@ -1,13 +1,13 @@
 // a future age calculator
 
-let x = prompt("yearOfBirth");
-let y = prompt("yearFuture");
-let z = y - x;
+const birthYear = prompt("yearOfBirth");
+const futureYear = prompt("yearFuture");
+const age = futureYear - birthYear;
 function calculateAge(yearOfBirth, yearFuture) {
-  if (z > 0) {
-    alert("You will be " + z + " years old in " + y + ".");
+  if (age > 0) {
+    alert("You will be " + age + " years old in " + futureYear + ".");
   } else {
     alert("you are not born yet");
   }
 }
-calculateAge(x, y);
+calculateAge(birthYear, futureYear);

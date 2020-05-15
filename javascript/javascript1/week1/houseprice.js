@@ -1,9 +1,9 @@
-let width2 = prompt("widthInMeters");
-let depth = prompt("depthInMeters");
-let height = prompt("heightInMeters");
-let garden = prompt("gardenSizeInM2");
-let volumeInMeters = width2 * height * depth;
-let housePrice = volumeInMeters * 2.5 * 1000 + garden * 300;
+const width2 = prompt("widthInMeters");
+const depth = prompt("depthInMeters");
+const height = prompt("heightInMeters");
+const garden = prompt("gardenSizeInM2");
+const volumeInMeters = width2 * height * depth;
+const housePrice = volumeInMeters * 2.5 * 1000 + garden * 300;
 function calcHouseCost(housePrice) {
   if (housePrice > 2500000) {
     alert("Peter is paying too much");

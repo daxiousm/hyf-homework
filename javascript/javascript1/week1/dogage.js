@@ -1,10 +1,10 @@
-let a = prompt("dogYearOfBirth");
-let b = prompt("dogYearFuture");
-shouldShowResultInDogYears = true;
+const bornYear = prompt("dogYearOfBirth");
+const futureYear = prompt("dogYearFuture");
+
+const dogAge = futureYear - bornYear;
+const shouldShowResultInDogYears = new Boolean(true);
 if (shouldShowResultInDogYears) {
-  let c = (b - a) * 10;
-  alert("Your dog will be " + c + " years old in " + b + ".");
+  alert("Your dog will be " + dogAge * 7 + " years old in " + b + ".");
 } else {
-  let f = b - a;
-  alert("Your dog will be " + f + " human years");
+  alert("Your dog will be " + dogAge + " human years");
 }
