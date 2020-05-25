@@ -1,30 +1,28 @@
 const class07Students = [];
 function addStudentToClass(studentName) {
   if (getNumberOfStudents(class07Students) < 6) {
-    if (studentName == " ") {
-      output = "You cannot add an empty string to a class";
-      return output;
+    if (studentName.trim() == " ") {
+      return "You cannot add an empty string to a class";
     } else {
       for (let i = 0; i < getNumberOfStudents(class07Students); i++) {
-        if (studentName == class07Students[i]) {
-          output = "student " +  studentName  + "is already in the class";
-          return output;
+        if (class07Students.includes(i)) {
+          return "student " + studentName + "is already in the class";
         }
       }
     }
-  } else if (studentName == "Queen") {
+  } else if (studentName.toLocaleLowerCase() === "Queen") {
     console.log("she is allowed in every classroom");
   } else {
-    output = " we are not allowed to add more students";
-    return output;
+    console.log(" we are not allowed to add more students");
+    return;
   }
   class07Students.push(studentName);
-  return "You are allowed to be in this class";
+  console.log("You are allowed to be in this class");
+  return;
 }
 
 function getNumberOfStudents(class07Students) {
-  const arrLength = class07Students.length;
-  return arrLength;
+  return class07Students.length;
 }
 function studentsInClass(studentName) {
   for (let i = 0; i < studentName.length; i++) {
