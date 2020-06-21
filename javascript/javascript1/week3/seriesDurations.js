@@ -41,16 +41,17 @@ function getAllHoursPerSeries(series) {
   return totalHoursPerSeries;
 }
 // function returns percentage of hours per series in 80 years
-function percentageOfHoursPerSeries(hoursPerSeries, totalHours) {
-  const result = (hoursPerSeries / totalHours) * 100;
-  return result;
+function logOutSeriesText() {
+  const lifespan = 80 * 365 * 24 * 60; // minutes
+  let total = 0;
+  for (let i = 0; i < seriesDurations.length; i++) {
+    const seriesDuration =
+      seriesDurations[i].days * 24 * 60 + seriesDurations[i].hours * 60;
+    const percent = (seriesDuration / lifespan) * 100;
+    total += percent;
+    console.log(`${seriesDurations[i].title} took ${percent}% of my life`);
+  }
+  console.log(`In total that is ${total}% of my life`);
 }
-for (let i = 0; i < seriesDurations.length; i++) {
-  percentage = percentageOfHoursPerSeries(
-    getAllHoursPerSeries(seriesDurations[i]),
-    totalHours
-  );
-  totalPercentage += percentage;
-  console.log(`${seriesDurations[i].title} took ${percentage}% of my life `);
-}
-console.log(`\n In total that is ${totalPercentage}% of my life `);
+
+logOutSeriesText();

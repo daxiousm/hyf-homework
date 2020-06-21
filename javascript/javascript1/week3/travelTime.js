@@ -3,13 +3,10 @@ const travelInformation = {
   destinationDistance: 432,
 };
 function timeToDestination(travelInfo) {
-  const timeInHours = Math.floor(
-    travelInfo.destinationDistance / travelInfo.speed
-  );
-  const timeInMinutes = Math.floor(
-    ((travelInfo.destinationDistance % travelInfo.speed) / 100) * 60
-  );
-  return `${timeInHours} hours and ${timeInMinutes} minutes`;
+  const totalTime = travelInfo.destinationDistance / travelInfo.speed;
+  const hours = Math.floor(totalTime);
+  const minutes = Math.round((totalTime - hours) * 60);
+  return `${hours} hours ${minutes} minutes`;
 }
 
 const travelTime = timeToDestination(travelInformation);

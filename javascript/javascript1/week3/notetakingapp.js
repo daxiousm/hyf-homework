@@ -3,27 +3,22 @@ const notes = [];
 
 function saveNote(content, id) {
   if (typeof id === "number" && typeof content === "string") {
-    const noteApp = { content: content, id: id };
-    notes.push(noteApp);
+    notes.push({ content, id });
   }
 }
 //get a note by id
 function getNote(id) {
-  if (typeof id == "number") {
-    for (let i = 0; i < notes.length; i++) {
-      if (id === notes[i].id) {
-        return notes[i].content;
-      }
+  if (typeof id == "number") return;
+  for (let i = 0; i < notes.length; i++) {
+    if (id === notes[i].id) {
+      return notes[i].content;
     }
-    console.log("put the correct id number");
-    return;
   }
-  console.log("Not a number");
+
+  console.error("Note not found");
   return;
 }
-function getAllNotes() {
-  return notes;
-}
+
 function logOutNotesFormatted() {
   for (let i = 0; i < notes.length; i++) {
     console.log(
