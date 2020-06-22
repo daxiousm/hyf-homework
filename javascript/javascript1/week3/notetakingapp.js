@@ -8,15 +8,13 @@ function saveNote(content, id) {
 }
 //get a note by id
 function getNote(id) {
-  if (typeof id == "number") return;
+  if (typeof id !== "number") return;
   for (let i = 0; i < notes.length; i++) {
     if (id === notes[i].id) {
       return notes[i].content;
     }
   }
-
-  console.error("Note not found");
-  return;
+  console.error("note not found");
 }
 
 function logOutNotesFormatted() {

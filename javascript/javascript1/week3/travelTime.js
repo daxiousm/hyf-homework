@@ -8,6 +8,5 @@ function timeToDestination(travelInfo) {
   const minutes = Math.round((totalTime - hours) * 60);
   return `${hours} hours ${minutes} minutes`;
 }
-
 const travelTime = timeToDestination(travelInformation);
 console.log(travelTime); // 4 hours and 42 minutes
