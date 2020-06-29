@@ -13,7 +13,7 @@ console.log(fun2(5, 4));
 console.log(fun3(5, 4));
 
 //
-const obj = {
+const Student= {
   fun4: () => {
     console.log(this);
   },
