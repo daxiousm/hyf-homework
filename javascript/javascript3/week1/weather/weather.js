@@ -1,15 +1,15 @@
-const button = document.getElementById("button1");
-const input = document.getElementById("userinput");
+const btnSubmit = document.getElementById("submit1");
+const cityName = document.getElementById("userinput");
 
 let body = document.querySelector("body");
 let ul = document.querySelector("ul");
 
-//const apiKey = "c65dee63b1543ccd79345b5fdaa81ee6";
-
-const url = `https://api.openweathermap.org/data/2.5/weather?q=copenhagen&appid=c65dee63b1543ccd79345b5fdaa81ee6&units=metric`;
+const apiKey = "c65dee63b1543ccd79345b5fdaa81ee6";
+const city = cityName.value;
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}=metric`;
 
 function inputLength() {
-  return input.value.length;
+  return city.length;
 }
 function createListElements() {
   fetch(url)
@@ -49,13 +49,14 @@ function createListElements() {
 
       evening.appendChild(document.createTextNode(`Sunsets:   ${sunset} `));
       body.appendChild(evening);
-    });
+    })
+    .catch(() => {});
   input.value = "";
 }
 
 function addListAfterClick() {
-  if (input.value.length > 0) {
+  if (inputLength() > 0) {
     createListElements();
   }
 }
-button.addEventListener("click", addListAfterClick);
+btnSubmit.addEventListener("click", addListAfterClick);
