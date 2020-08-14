@@ -13,16 +13,17 @@ where status_id = 3;
 
 -- task 4
 select title from task
-where status_id = 1 and 2;
+where status_id = 1 and  status_id = 2;
 
 
 -- task 5
 select * from task
-order by created desc;
+ORDER BY created desc;
 
 -- task 6
 select title from task
-order by created desc;
+order by created desc
+LIMIT 3;
 
  -- task 7
  select title,due_date from task
@@ -30,8 +31,12 @@ order by created desc;
  or title like '%database%';
  
  -- task 8
-select task.title, status.name from task
-join status on task.status_id = status_id;
+SELECT
+    task.title, 
+    status.name 
+FROM task
+JOIN status 
+	on task.status_id = status_id;
 
 -- task 9
 select status.name as statusName, count(task.status_id) as task_count
