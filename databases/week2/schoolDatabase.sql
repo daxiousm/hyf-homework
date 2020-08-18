@@ -25,8 +25,8 @@ CREATE TABLE `student` (
 
 -- Create an index on the name column of the student table.
 
-USE school;
+USE schoolDatabase;
 CREATE INDEX name_index ON student(name);
 
 -- Add a new column to the class table named status which can only have the following values: not-started, ongoing, finished (hint: enumerations).
-ALTER  TABLE class ADD  status ENUM('notstarted', 'ongoing', 'finished') NOT NULL;
+ALTER  TABLE class ADD  status ENUM('notstarted', 'ongoing', 'finished') DEFAULT 'notstarted';
