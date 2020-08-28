@@ -1,0 +1,18 @@
+{
+  "name": "week1",
+  "version": "1.0.0",
+  "description": "week1 assignment",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/backend/app.js",
+    "dev": "nodemon src/backend/app.js"
+  },
+  "author": "Dax",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
