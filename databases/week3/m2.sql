@@ -3,35 +3,6 @@
 CREATE SCHEMA IF NOT EXISTS `meal_schema` DEFAULT CHARACTER SET utf8 ;
 USE `meal_schema` ;
 
-
--- Table `meal_schema`.`Reservation`
-
-CREATE TABLE IF NOT EXISTS `meal_schema`.`Reservation` (
-  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `number_of_guests` INT NULL,
-  `meal_id` INT NULL,
-  `created_date` DATE NULL,
-  `contact_phonenumber` VARCHAR(45) NULL,
-  `contact_name` VARCHAR(45) NULL,
-  `contact_email` VARCHAR(45) NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `meal_schema`.`Review`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `meal_schema`.`Review` (
-  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `title` VARCHAR(45) NULL,
-  `description` TEXT NULL,
-  `meal_id` INT NULL,
-  `stars` INT NULL,
-  `created_date` DATE NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-
 -- -----------------------------------------------------
 -- Table `meal_schema`.`Meal`
 -- -----------------------------------------------------
@@ -47,6 +18,38 @@ CREATE TABLE IF NOT EXISTS `meal_schema`.`Meal` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
  
+
+-- Table `meal_schema`.`Reservation`
+
+CREATE TABLE IF NOT EXISTS `meal_schema`.`Reservation` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `number_of_guests` INT NULL,
+  `meal_id` INT NULL,
+  `created_date` DATE NULL,
+  `contact_phonenumber` VARCHAR(45) NULL,
+  `contact_name` VARCHAR(45) NULL,
+  `contact_email` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (meal_id) REFERENCES meal(id) ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `meal_schema`.`Review`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `meal_schema`.`Review` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(45) NULL,
+  `description` TEXT NULL,
+  `meal_id` INT NULL,
+  `stars` INT NULL,
+  `created_date` DATE NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (meal_id) REFERENCES meal(id) ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
