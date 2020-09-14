@@ -4,15 +4,6 @@ const knex = require("../database");
 
 const router = express.Router();
 
-/* router.get("/", async (request, response) => {
-  try {
-    // knex syntax for selecting things. Look up the documentation for knex for further info
-    const concerts = await knex("concerts");
-    response.json(concerts);
-  } catch (error) {
-    throw error;
-  }
-}); */
 const createMeals = async ({ body }) => {
   const {
     title,
