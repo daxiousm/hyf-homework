@@ -2,10 +2,11 @@
   "name": "week1",
   "version": "1.0.0",
   "description": "week1 assignment",
-  "main": "app.js",
+  "main": "src/backend/server.js",
   "scripts": {
-    "start": "node src/backend/app.js",
-    "dev": "nodemon src/backend/app.js"
+    "start": "node src/backend/server.js",
+    "dev": "nodemon src/backend/server.js",
+    "test": "jest --runInBand"
   },
   "author": "Dax",
   "license": "ISC",
@@ -13,6 +14,8 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
   }
 }
