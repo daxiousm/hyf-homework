@@ -1,0 +1,37 @@
+{
+  "seriesMovies": [
+    {
+      "title": "The Wire",
+      "seasons": "5",
+      "genre": ["Crime", "Drama", "Thriller"]
+    },
+    {
+      "title": "The Sopranos",
+      "seasons": "6",
+      "genre": ["Crime", "Drama"]
+    },
+    {
+      "title": "Homeland",
+      "seasons": "8",
+      "genre": ["Crime", "Drama", "Mystery"]
+    },
+    {
+      "title": "Homeland",
+      "seasons": "8",
+      "genre": ["Crime", "Drama", "Mystery"]
+    }
+  ],
+  "Footbal club": "Machester United",
+  "best player": [
+    {
+      "name": "Pogba",
+      "age": "27",
+      "position": "midfield"
+    },
+    {
+      "name": "martial",
+      "age": "22",
+      "position": "striker"
+    }
+  ]
+}
