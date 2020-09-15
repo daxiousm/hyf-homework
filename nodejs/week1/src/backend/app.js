@@ -10,14 +10,14 @@ const reservationRouter = require("./routes/reservation.js");
 
 app.use("/meals", mealsRouter);
 
-app.get("/cheap-meals", cheapMealsRouter);
+app.use("/cheap-meals", cheapMealsRouter);
 
-app.get("/large-meals", largeMealsRouter);
+app.use("/large-meals", largeMealsRouter);
 
-app.get("/meal", mealRouter);
+app.use("/meal", mealRouter);
 
-app.get("/reservations", reservationsRouter);
+app.use("/reservations", reservationsRouter);
 
-app.get("/reservation", reservationRouter);
+app.use("/reservation", reservationRouter);
 
 module.exports = app;

@@ -3,8 +3,8 @@ const router = express.Router();
 
 const reservations = require("../data/reservations.json");
 
-router.get("/reservation", (req, res) => {
+router.get("/reservation", (request, respond) => {
   const randomReservation = Math.floor(Math.random() * reservations.length);
-  res.send(reservations);
+  respond.send(reservations);
 });
 module.exports = router;

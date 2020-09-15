@@ -4,7 +4,7 @@ const meals = require("../data/meals.json");
 
 router.get("/cheap-meals", (req, res) => {
   const cheapMeals = meals.filter((meal) => {
-    return meal.price < 120;
+    return meal.price < 121;
   });
   res.send(cheapMeals);
 });

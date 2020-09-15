@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "numberOfGuests": 3,
+    "numberOfGuests": 4,
     "title": "tibs",
     "description": "meat chunks",
     "address": "Tagensvej 43",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "numberOfGuests": 5,
+    "numberOfGuests": 6,
     "title": "doro wot",
     "description": "chicken stew",
     "address": "Tagensvej 43",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "numberOfGuests": 5,
+    "numberOfGuests": 4,
     "title": "kitfo",
     "description": "beef tartar",
     "address": "Tagensvej 43",
