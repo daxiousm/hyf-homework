@@ -8,6 +8,8 @@ const mealRouter = require("./routes/meal.js");
 const reservationsRouter = require("./routes/reservations.js");
 const reservationRouter = require("./routes/reservation.js");
 
+// using midleware
+
 app.use("/meals", mealsRouter);
 
 app.use("/cheap-meals", cheapMealsRouter);

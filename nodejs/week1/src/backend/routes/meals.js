@@ -4,10 +4,10 @@ const router = express.Router();
 const meals = require("../data/meals.json");
 const reviews = require("../data/reviews.json");
 
-router.get("/meals", (request, respond) => {
+router.get("/meals", (req, res) => {
   meals.forEach((meal) => {
     meal.review = reviews.filter((reviewed) => reviewed.mealId === meal.id);
   });
-  respond.send(meals);
+  res.send(meals);
 });
 module.exports = router;

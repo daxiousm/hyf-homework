@@ -9,7 +9,7 @@ class Circle {
     return 2 * Math.PI * this.radius;
   }
   getArea() {
-    return Math.PI ** this.radius;
+    return Math.PI * this.radius * this.radius;
   }
 }
 const circle = new Circle(10);

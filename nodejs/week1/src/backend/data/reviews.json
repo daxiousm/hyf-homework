@@ -1,22 +1,22 @@
 [
   {
     "id": 1,
-    "numberOfStars": 5,
+    "numberOfStars": 4,
     "content": "Best meal ever",
     "mealId": 1,
     "createdAt": "2020-08-23"
   },
   {
     "id": 2,
-    "numberOfStars": 4,
+    "numberOfStars": 3,
     "content": "it can be made better",
     "mealId": 2,
     "createdAt": "2020-08-24"
   },
   {
     "id": 3,
-    "numberOfStars": 2,
-    "content": "it can be made better",
+    "numberOfStars": 3,
+    "content": "tasty food",
     "mealId": 4,
     "createdAt": "2020-08-25"
   }

@@ -8,7 +8,7 @@
     "dev": "nodemon src/backend/server.js",
     "test": "jest --runInBand"
   },
-  "author": "Dax",
+  "author": "Daxious",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
