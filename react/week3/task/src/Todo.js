@@ -64,9 +64,9 @@ import TodoForm from './TodoForm'
             <div className="tasks">
                 {setTasks.map((setTask, id) => (
                     <Task
-                    description={setTask.description}
-                    deadline={setTask.deadline}
-                    setTask={setTask}
+                    description={task.description}
+                    deadline={task.deadline}
+                    task={task}
                     completeTask={completeTask}
                     removeTask={removeTask}
                     updateTask={updateTask}
