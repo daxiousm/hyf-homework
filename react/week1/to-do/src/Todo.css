@@ -1,0 +1,14 @@
+.tasks {
+  display: flex;
+}
+.dos {
+  display: inline-block;
+  border: 5px;
+  margin: 20px;
+}
+.dos .desc {
+  color: blueviolet;
+}
+.dos .deadline {
+  color: red;
+}
