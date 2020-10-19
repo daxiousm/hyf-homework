@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       {todos.map((todo) => {
         return (
-          <Todo descriptions={todo.descriptions} deadlines={todo.deadlines} />
+          <Todo description={todo.description} deadline={todo.deadline} />
         );
       })}
 
