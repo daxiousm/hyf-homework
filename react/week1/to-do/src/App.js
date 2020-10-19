@@ -5,8 +5,16 @@ import Todo from "./Todo";
 
 const todos = [
   {
-    descriptions: ["Get out of bed", "brush teeth", "eat breakfast"],
-    deadlines: ["wed sep 13 2017", "Thu Sep 14 2017", "Fri Sep 15 2017"],
+    description: "Get out of bed",
+    deadline: "wed sep 13 2017"
+  },
+   {
+    description: "brush teeth",
+    deadline: "Thu Sep 14 2017"
+  },
+   {
+    description: "eat breakfast",
+    deadline: "Fri Sep 15 2017"
   },
 ];
 
