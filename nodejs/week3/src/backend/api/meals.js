@@ -207,8 +207,8 @@ router.get("/", async (request, response) => {
 });
 
 router.get("/", async (request, response) => {
-  const title2 = parseInt(request.query.title);
-  title(title2)
+  const title1 = parseInt(request.query.title);
+  title(title1)
     .then((result) => response.json(result))
     .catch((ex) => {
       response.status(400).send("Bad request").end();
