@@ -26,7 +26,7 @@ import Task from './Task'
 
     const addTask = () => {
         const getRandomTask = tasks[Math.floor(Math.random() * tasks.length)];
-        const newTasks = [...tasks, { description:getRandomTask, completed: false }];
+        const newTasks = [...tasks, { description:getRandomTask.description, completed: false }];
         setTasks(newTasks);
     };
 
@@ -39,6 +39,14 @@ import Task from './Task'
         newTasks[index].completed = true;
         setTasks(newTasks);
     };
+
+    const toggleComplete = (index) => {
+    setTasks((prev) =>
+      prev.map((task, taskIndex) =>
+        taskIndex === index ? { ...task, completed: !task.completed } : task
+      )
+    );
+  };
 
     const removeTask = index => {
         const newTasks = [...tasks];
@@ -56,11 +64,11 @@ import Task from './Task'
             <div className="tasks">
                 {tasks.map((task, index) => (
                     <Task
-                    description={task.description}
                     task={task}
                     index={index}
                     completeTask={completeTask}
                     removeTask={removeTask}
+                    toggleComplete={toggleComplete}
                     key={index}
                     />
                 ))}

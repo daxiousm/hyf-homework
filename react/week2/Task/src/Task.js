@@ -9,7 +9,7 @@ const Task = ({ task, index, completeTask, removeTask }) => {
             {task.description}
 
             <button style={{ background: "red" }} onClick={() => removeTask(index)}>x</button>
-            <button onClick={() => completeTask(index)}>Complete</button>
+            <button onClick={() => completeTask(index)}onClick={() => completeTask(index)}>Complete</button>
 
         </div>
     );
