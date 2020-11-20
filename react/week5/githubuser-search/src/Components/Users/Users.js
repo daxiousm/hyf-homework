@@ -10,7 +10,7 @@ const Users = () => {
     const[isLoading,setIsLoading]=useState(false)
     const[error,setError]=useState(false)
     const[users, setUsers] = useState([])
-    const url = `https://api.github.com/search/users?q=${input}`
+    const usersSearchUrl = `https://api.github.com/search/users?q=${input}`
 
     useEffect(() => {
 
